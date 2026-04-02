@@ -1,0 +1,55 @@
+[
+  {
+    "type": "Manager",
+    "emp_id": "M001",
+    "name": "Alice",
+    "department": "Engineering",
+    "salary": 95000,
+    "performance_rating": 0.0,
+    "team_size": 5
+  },
+  {
+    "type": "Developer",
+    "emp_id": "D001",
+    "name": "Bob",
+    "department": "Engineering",
+    "salary": 75000,
+    "performance_rating": 0.0,
+    "languages": [
+      "Python",
+      "Java"
+    ],
+    "experience": 3
+  },
+  {
+    "type": "Designer",
+    "emp_id": "D002",
+    "name": "Carol",
+    "department": "Creative",
+    "salary": 65000,
+    "performance_rating": 0.0,
+    "tools": [
+      "Figma"
+    ],
+    "portfolio_size": 15
+  },
+  {
+    "type": "Intern",
+    "emp_id": "I001",
+    "name": "Dave",
+    "department": "Engineering",
+    "salary": 25000,
+    "performance_rating": 0.0,
+    "university": "MIT",
+    "mentor_id": "M001"
+  },
+  {
+    "type": "Manager",
+    "emp_id": "MN001",
+    "name": "Duong",
+    "department": "Creative",
+    "salary": 5000.0,
+    "performance_rating": 3.0,
+    "team_size": 400
+  }
+]
