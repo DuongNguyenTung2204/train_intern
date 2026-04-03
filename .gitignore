@@ -1,0 +1,73 @@
+# =========================
+
+# Python
+
+# =========================
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+
+.venv/
+env/
+venv/
+
+# =========================
+
+# VSCode
+
+# =========================
+
+.vscode/
+
+# =========================
+
+# Environment variables
+
+# =========================
+
+.env
+
+# =========================
+
+# Database files
+
+# =========================
+
+*.db
+*.sqlite3
+day3/cafef_database.db
+
+# =========================
+
+# Data files
+
+# =========================
+
+*.xlsx
+*.csv
+*.json
+
+# Ignore specific ETL output
+
+day3/cafef_articles.xlsx
+
+# =========================
+
+# Logs
+
+# =========================
+
+*.log
+
+# =========================
+
+# OS files
+
+# =========================
+
+.DS_Store
+Thumbs.db
