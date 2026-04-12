@@ -1,60 +1,84 @@
-# --- Python ---
+# =============================================================================
+# Python
+# =============================================================================
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 *.pyc
-*.log
+*.pdb
 
-# virtual environment
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Virtual environments
 .venv/
-env/
 venv/
+env/
 ENV/
+.python-version
 
-# pip cache
+# pip
 pip-log.txt
 pip-delete-this-directory.txt
 
-# mypy cache
+# =============================================================================
+# Type checkers & linters
+# =============================================================================
 .mypy_cache/
 .dmypy.json
-
-# pyre type checker
+dmypy.json
 .pyre/
+.ruff_cache/
 
-# coverage reports
+# =============================================================================
+# Testing & Coverage
+# =============================================================================
+.pytest_cache/
+.cache/
 htmlcov/
 .coverage
 .coverage.*
-.cache
-nosetests.xml
 coverage.xml
 *.cover
 *.py,cover
+nosetests.xml
 
-# pytest
-.pytest_cache/
+# =============================================================================
+# Environment & Secrets
+# =============================================================================
+.env
+.env.local
+.env.*.local
+# NOTE: .env.example is intentionally NOT ignored — commit it as a template
 
-# --- Docker ---
-# Docker build files
+# =============================================================================
+# Docker
+# =============================================================================
 *.tar
 docker-compose.override.yml
 
-# --- Docker volumes / DB data ---
+# Docker volumes / local DB data
 postgres_data/
 *.sqlite
 *.db
 
-# --- IDE / editor ---
+# =============================================================================
+# Logs
+# =============================================================================
+*.log
+logs/
+
+# =============================================================================
+# IDE / Editor
+# =============================================================================
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
-
-# --- Environment files ---
-.env
-.env.*.local
-
-# --- Logs ---
-*.log
+*.swp
+*.swo
