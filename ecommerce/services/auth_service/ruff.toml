@@ -1,0 +1,24 @@
+# Ruff configuration — https://docs.astral.sh/ruff/
+target-version = "py312"
+line-length = 100
+
+[lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+    "N",   # pep8-naming
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+    "B008",  # do not perform function calls in default arguments (Django patterns)
+]
+
+[lint.per-file-ignores]
+"tests/*" = ["N802"]  # allow lower-case test functions
+
+[lint.isort]
+known-third-party = ["django", "rest_framework", "rest_framework_simplejwt"]

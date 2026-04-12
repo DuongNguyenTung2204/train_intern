@@ -1,0 +1,214 @@
+# =============================================================================
+# .gitignore — EShop Microservices (Django + Docker)
+# =============================================================================
+
+
+# =============================================================================
+# Python
+# =============================================================================
+
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+wheels/
+sdist/
+develop-eggs/
+lib/
+lib64/
+parts/
+var/
+.eggs/
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+# =============================================================================
+# Virtual Environments
+# =============================================================================
+
+.venv/
+venv/
+env/
+ENV/
+.env.bak
+virtualenv/
+
+
+# =============================================================================
+# Environment & Secrets
+# =============================================================================
+
+# Real env file — giữ lại .env.example
+.env
+
+# Các biến thể khác
+*.env.local
+*.env.*.local
+.env.production
+.env.staging
+.env.development
+
+
+# =============================================================================
+# Django
+# =============================================================================
+
+# Local DB (dev SQLite)
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+
+# Media files — file upload của user, không commit vào repo
+**/media/
+
+# Static files collected (collectstatic output)
+**/staticfiles/
+**/static_root/
+
+# Django secret key backup
+local_settings.py
+
+
+# =============================================================================
+# Testing & Coverage
+# =============================================================================
+
+# pytest cache
+.pytest_cache/
+
+# Coverage
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# HTML coverage report
+htmlcov/
+
+# tox
+.tox/
+.nox/
+
+
+# =============================================================================
+# Linters & Formatters
+# =============================================================================
+
+# Ruff cache
+.ruff_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pylint
+.pylint.d/
+
+
+# =============================================================================
+# Docker
+# =============================================================================
+
+# Docker override files (local dev overrides — không commit)
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Volume data nếu mount local
+**/postgres_data/
+**/pgdata/
+**/redis_data/
+
+
+# =============================================================================
+# IDEs & Editors
+# =============================================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (PyCharm, IntelliJ, WebStorm...)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+
+# =============================================================================
+# OS
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+
+# =============================================================================
+# Logs & Temp files
+# =============================================================================
+
+*.log
+*.log.*
+logs/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.patch
+
+
+# =============================================================================
+# Project-specific
+# =============================================================================
+
+# Thư mục docs nội bộ — không push lên remote
+ecommerce/docs/
+
+# Node (nếu có frontend sau này)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
